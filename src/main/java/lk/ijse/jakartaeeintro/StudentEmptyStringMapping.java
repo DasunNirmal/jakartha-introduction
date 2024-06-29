@@ -8,9 +8,8 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(value = "/student")
-public class Student extends HttpServlet {
-
+@WebServlet(value = "")
+public class StudentEmptyStringMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Student Servlet");
@@ -24,8 +23,5 @@ public class Student extends HttpServlet {
         System.out.println("Request URL : "+req.getRequestURL());
         System.out.println("Get Protocol : "+req.getProtocol());
         System.out.println("Get Scheme : "+req.getScheme());
-
-        System.out.println("Query String Key Value Name : "+req.getParameter("name"));
-        System.out.println("Query String Key Value City : "+req.getParameter("city"));
     }
 }
