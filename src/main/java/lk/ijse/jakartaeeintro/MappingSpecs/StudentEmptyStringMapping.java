@@ -1,4 +1,4 @@
-package lk.ijse.jakartaeeintro;
+package lk.ijse.jakartaeeintro.MappingSpecs;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

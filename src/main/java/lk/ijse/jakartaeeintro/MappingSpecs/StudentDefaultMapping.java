@@ -1,4 +1,4 @@
-package lk.ijse.jakartaeeintro;
+package lk.ijse.jakartaeeintro.MappingSpecs;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,8 +8,8 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(value = "/*")
-public class StudentWildCardMapping extends HttpServlet {
+@WebServlet(value = "/")
+public class StudentDefaultMapping extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Student Servlet");
