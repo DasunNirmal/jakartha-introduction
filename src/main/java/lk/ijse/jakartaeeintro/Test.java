@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/test")
+@WebServlet(value = "/test")
 public class Test extends HttpServlet {
 
     int number01 = 10;
